@@ -30,4 +30,16 @@ class LinkedList
       @head = node
     end
   end
+
+  def size
+    return 0 if @head.nil?
+
+    count = 0
+    temp = @head
+    until temp.nil?
+      count += 1
+      temp = temp.next
+    end
+    puts count
+  end
 end
