@@ -47,4 +47,9 @@ class LinkedList
     hd = @head
     hd.value
   end
+
+  def tail
+    tl = @tail
+    tl.value
+  end
 end
