@@ -52,4 +52,12 @@ class LinkedList
     tl = @tail
     tl.value
   end
+
+  def at(index)
+    temp = @head
+    index.times do
+      temp = temp.next
+    end
+    puts temp.value
+  end
 end
