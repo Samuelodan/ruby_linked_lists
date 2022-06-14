@@ -50,6 +50,6 @@ class LinkedList
     index.times do
       temp = temp.next
     end
-    temp.value
+    temp
   end
 end
