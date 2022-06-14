@@ -52,4 +52,13 @@ class LinkedList
     end
     temp
   end
+
+  def pop
+    return nil if @head.nil?
+
+    last = @tail
+    @tail = self.at(self.size - 2)
+    @tail.next = nil
+    last
+  end
 end
