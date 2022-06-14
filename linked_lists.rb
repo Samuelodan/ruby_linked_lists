@@ -4,6 +4,8 @@ require './node'
 
 # this class creates the linked lists
 class LinkedList
+  attr_reader :head, :tail
+
   def initialize
     @head = nil
     @tail = nil
@@ -41,16 +43,6 @@ class LinkedList
       temp = temp.next
     end
     count
-  end
-
-  def head
-    hd = @head
-    hd
-  end
-
-  def tail
-    tl = @tail
-    tl
   end
 
   def at(index)
