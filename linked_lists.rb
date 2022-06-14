@@ -42,4 +42,9 @@ class LinkedList
     end
     puts count
   end
+
+  def head
+    hd = @head
+    hd.value
+  end
 end
