@@ -40,7 +40,7 @@ class LinkedList
       count += 1
       temp = temp.next
     end
-    puts count
+    count
   end
 
   def head
@@ -58,6 +58,6 @@ class LinkedList
     index.times do
       temp = temp.next
     end
-    puts temp.value
+    temp.value
   end
 end
