@@ -45,12 +45,12 @@ class LinkedList
 
   def head
     hd = @head
-    hd.value
+    hd
   end
 
   def tail
     tl = @tail
-    tl.value
+    tl
   end
 
   def at(index)
