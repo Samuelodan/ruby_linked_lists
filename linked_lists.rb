@@ -88,6 +88,8 @@ class LinkedList
   end
 
   def insert_at(value, index)
+    return nil unless index.between?(0, self.size - 1)
+
     node = Node.new(value)
     at_index = self.at(index)
     after_index = self.at(index + 1)
