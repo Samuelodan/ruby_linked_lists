@@ -95,4 +95,20 @@ class LinkedList
     node.next = after_index
     self.to_s
   end
+
+  def remove_at(index)
+    at_idx = self.at(index)
+    before_idx = self.at(index - 1)
+    after_idx = self.at(index + 1)
+
+    if at_idx == @head
+      @head = after_idx
+    elsif at_idx == @tail
+      @tail = before_idx
+      before_idx.next = nil
+    else
+      before_idx.next = after_idx
+    end
+    at_idx
+  end
 end
