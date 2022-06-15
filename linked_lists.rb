@@ -97,6 +97,8 @@ class LinkedList
   end
 
   def remove_at(index)
+    return nil unless index.between?(0, self.size - 1)
+
     at_idx = self.at(index)
     before_idx = self.at(index - 1)
     after_idx = self.at(index + 1)
