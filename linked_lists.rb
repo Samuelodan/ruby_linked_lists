@@ -61,4 +61,11 @@ class LinkedList
     @tail.next = nil
     last
   end
+
+  def contains?(value)
+    for i in 0...self.size
+      return true if self.at(i).value == value
+    end
+    false
+  end
 end
