@@ -46,6 +46,8 @@ class LinkedList
   end
 
   def at(index)
+    return nil unless index.between?(0, self.size - 1)
+
     temp = @head
     index.times do
       temp = temp.next
