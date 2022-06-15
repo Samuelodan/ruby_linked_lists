@@ -68,4 +68,14 @@ class LinkedList
     end
     false
   end
+
+  def find(value)
+    index = 0
+    for i in 0...self.size
+      return index if self.at(i).value == value
+
+      index += 1
+    end
+    nil
+  end
 end
