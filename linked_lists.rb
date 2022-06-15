@@ -86,4 +86,13 @@ class LinkedList
     end
     "#{str}nil"
   end
+
+  def insert_at(value, index)
+    node = Node.new(value)
+    at_index = self.at(index)
+    after_index = self.at(index + 1)
+    at_index.next = node
+    node.next = after_index
+    self.to_s
+  end
 end
