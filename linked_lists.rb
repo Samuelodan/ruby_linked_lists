@@ -78,4 +78,12 @@ class LinkedList
     end
     nil
   end
+
+  def to_s
+    str = ''
+    for i in 0...self.size
+      str += "(#{self.at(i).value}) -> "
+    end
+    "#{str}nil"
+  end
 end
