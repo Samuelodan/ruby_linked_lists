@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './node'
+require_relative './node'
 
 # this class creates the linked lists
 class LinkedList

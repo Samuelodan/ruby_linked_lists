@@ -1,4 +1,4 @@
-require './linked_lists'
+require_relative './linked_list'
 
 # Linked_list class can be used like so
 ll = LinkedList.new
